@@ -1,0 +1,13 @@
+<p>second-level-page-two works!</p>
+<h1>{{state_date.text}}</h1>
+<h1>{{state_date.value}}</h1>
+,<div>
+    <h3>change title</h3>
+    <input type="text" [(ngModel)]="name" />
+    <button (click)="changeText(ActionType.ChangeName)">Change</button>
+</div>
+<div>
+  <button (click)="changeaction(ActionType.Add)">ADD</button>
+  <button (click)="changeaction(ActionType.Reduce)">REDUCE</button>
+  <button (click)="changeaction(ActionType.Reset)">RESET</button>
+</div>
