@@ -15,4 +15,4 @@ phases:
   post_build:
     commands:
       - echo "Updating files in the S3 bucket..."
-      - aws s3 sync dist/rx-route-auth/ s3://khfirstbucket --delete
+      # - aws s3 sync dist/rx-route-auth/ s3://khfirstbucket --delete
