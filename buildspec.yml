@@ -4,8 +4,9 @@ phases:
     runtime-versions:
       nodejs: 14
     commands:
-      - echo "Installing dependencies with new..."
+      - echo "Installing dependencies ..."
       - npm install
+      - npm i -g @angular/cli
   build:
     commands:
       - echo "Building Angular project..."
