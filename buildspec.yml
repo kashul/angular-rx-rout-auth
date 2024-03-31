@@ -16,7 +16,11 @@ phases:
     commands:
       - echo "Updating files in the S3 bucket..."
       - printf '{"hello":"world"}' > angular-test.json
+      
+# this part is needed when only code build use to deploy. this code sync build code to s3 bucket
       # - aws s3 sync dist/rx-route-auth/ s3://khfirstbucket --delete
+
+# this part is needed to build artifact in S3 other wise deploy will fail. No need if only use codeBuild to deploy
 artifacts:
   files: 
     - ./angular-test.json
