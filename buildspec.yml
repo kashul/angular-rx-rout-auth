@@ -16,3 +16,7 @@ phases:
     commands:
       - echo "Updating files in the S3 bucket..."
       # - aws s3 sync dist/rx-route-auth/ s3://khfirstbucket --delete
+  artifacts:
+    files:
+    - ./angular-test.json
+    discard-paths: yes
