@@ -15,6 +15,7 @@ phases:
   post_build:
     commands:
       - echo "Updating files in the S3 bucket..."
+      - printf '{"hello":"world"}' > angular-test.json
       # - aws s3 sync dist/rx-route-auth/ s3://khfirstbucket --delete
 artifacts:
   files: 
